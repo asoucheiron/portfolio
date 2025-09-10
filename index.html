@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="ca">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfolio - Alex Soucheiron García</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img class="avatar" id="avatar" src="" alt="Avatar" />
+            <div>
+                <h1 id="name"></h1>
+                <p class="lead" id="tagline"></p>
+            </div>
+            <nav class="top-actions">
+                <a class="btn" href="#projects">Projectes</a>
+                <a class="btn" href="#contact">Contacte</a>
+                <a class="btn" id="downloadCv" href="#">Descarrega el CV</a>
+            </nav>
+        </header>
+
+        <main>
+            <section>
+                <div class="card about">
+                    <h2>Sobre mi</h2>
+                    <p id="about-text"></p>
+
+                    <div style="margin-top:12px">
+                        <strong>Skills</strong>
+                        <div class="skills" id="skills-list"></div>
+                    </div>
+                </div>
+
+                <div class="card" style="margin-top:16px" id="projects">
+                    <h2>Projectes</h2>
+                    <div class="projects-grid" id="projects-grid"></div>
+                </div>
+
+                <div class="card" style="margin-top:16px">
+                    <h2>Blog / Notes</h2>
+                    <p class="muted" style="color:var(--muted)">
+                        Si tens posts o apunts tècnics, afegeix-los aquí.
+                    </p>
+                </div>
+            </section>
+
+            <aside class="sidebar">
+                <div class="card section">
+                    <h3>Formació</h3>
+                    <ul class="edu">
+                        <li><strong>Grau en Enginyeria Informàtica</strong> — Universitat Autònoma de Barcelona</li>
+                        <li><strong>Batxillerat Tecnològic</strong> — Escola Lleó XIII</li>
+                    </ul>
+                </div>
+
+                <div class="card section" id="contact">
+                    <h3>Contacte</h3>
+                    <p>Email: <a class="small-link" href="mailto:tu@exemple.com">asoucheiron7@gmail.com</a></p>
+                    <div class="links">
+                        <a class="small-link" href="#" id="linkedin">LinkedIn</a>
+                        <a class="small-link" href="#" id="github">GitHub</a>
+                    </div>
+                </div>
+            </aside>
+        </main>
+
+        <footer>
+            Fet amb ❤️ · <span id="year"></span>
+        </footer>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal-backdrop" id="modal">
+        <div class="modal">
+            <div class="card">
+                <button id="closeModal">X</button>
+                <h3 id="modal-title"></h3>
+                <p id="modal-desc"></p>
+                <p id="modal-tech"></p>
+                <div>
+                    <a id="modal-github" class="btn" href="#" target="_blank">Codi</a>
+                    <a id="modal-demo" class="btn" href="#" target="_blank">Demo</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

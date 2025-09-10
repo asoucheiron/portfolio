@@ -1,0 +1,222 @@
+:root {
+    --bg: #0f172a;
+    --glass: rgba(255, 255, 255, 0.03);
+    --radius: 14px;
+    color-scheme: dark;
+    color: #e6eef8;
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+* {
+    box-sizing: border-box
+}
+
+body {
+    margin: 0;
+    background: linear-gradient(180deg, var(--bg), #0f172a);
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 32px auto;
+    padding: 24px
+}
+
+header {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 24px
+}
+
+.avatar {
+    width: 88px;
+    height: 88px;
+    border-radius: 12px;
+    object-fit: cover;
+    flex-shrink: 0;
+    border: 2px solid rgba(255, 255, 255, 0.05)
+}
+
+h1 {
+    font-size: 1.6rem;
+    margin: 0
+}
+
+p.lead {
+    margin: 4px 0 0;
+    color: var(--muted)
+}
+
+
+nav {
+    display: flex;
+    gap: 12px;
+    margin-left: auto
+}
+
+.btn {
+    background: var(--glass);
+    border-radius: 10px;
+    padding: 8px 12px;
+    text-decoration: none;
+    color: inherit;
+    font-weight: 600;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.03)
+}
+
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 360px;
+    gap: 28px
+}
+
+@media (max-width:900px) {
+    main {
+        grid-template-columns: 1fr
+    }
+
+    .sidebar {
+        order: 2
+    }
+}
+
+
+.card {
+    text-align: justify;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(0, 0, 0, 0.02));
+    padding: 18px;
+    border-radius: var(--radius);
+    box-shadow: 0 6px 18px rgba(2, 6, 23, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.02)
+}
+
+
+.about p {
+    color: var(--muted);
+    line-height: 1.5
+}
+
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 12px
+}
+
+.skill {
+    background: rgba(255, 255, 255, 0.03);
+    padding: 8px 10px;
+    border-radius: 999px;
+    font-size: 0.9rem;
+    border: 1px solid rgba(255, 255, 255, 0.02)
+}
+
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px
+}
+
+@media (max-width:700px) {
+    .projects-grid {
+        grid-template-columns: 1fr
+    }
+}
+
+.project {
+    padding: 12px;
+    border-radius: 12px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.015), rgba(0, 0, 0, 0.02));
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 0.02)
+}
+
+.project h3 {
+    margin: 0 0 6px 0;
+    font-size: 1rem
+}
+
+.project p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 0.9rem
+}
+
+.project .meta {
+    margin-top: 8px;
+    font-size: 0.85rem;
+    color: var(--muted)
+}
+
+
+.sidebar .section+.section {
+    margin-top: 18px;
+    text-align: left;
+}
+
+.edu li {
+    margin-bottom: 8px
+}
+
+
+footer {
+    margin-top: 28px;
+    text-align: center;
+    color: var(--muted);
+    font-size: 0.9rem
+}
+
+
+.modal-backdrop {
+    position: fixed;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.65));
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 20px
+}
+
+.modal {
+    max-width: 880px;
+    width: 100%;
+}
+
+.modal .card {
+    padding: 20px
+}
+
+
+.links {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap
+}
+
+a.small-link {
+    font-size: 0.9rem;
+    color: var(--accent)
+}
+
+
+.top-actions {
+    display: flex;
+    gap: 8px;
+    align-items: center
+}
+
+
+#closeModal {
+    float: right;
+    background: none;
+    border: none;
+    color: var(--muted);
+    font-weight: 700;
+    cursor: pointer
+}
