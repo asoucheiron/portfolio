@@ -1,7 +1,7 @@
 const PROFILE = {
     name: "Alex Soucheiron García",
     role: "Estudiant d'Enginyeria Informàtica",
-    about: "Sóc estudiant d'Enginyeria Informàtica a la Universitat Autònoma de Barcelona, especialitzat en Enginyeria del Software. Tinc un gran interès en el desenvolupament d'aplicacions i web ja sigui desde la concepció de la idea fins a la seva implementació i manteniment. \n \n Durant la carrera he treballat en projectes molt diversos, des de jocs i aplicacions acadèmiques fins a sistemes més complexos com punts de venda o eines de gestió de dades. Aquests projectes m'han ajudat a enfortir els coneixements en llenguatges com Java, C++ o Javascript, així com bones pràctiques de disseny de programari i ús de metodologies àgils. \n \n M'agrada aprendre noves tecnologies i afrontar reptes que em permetin créixer com a desenvolupador. Em motiva especialment treballar en equips col·laboratius, on puc aportar però sobretot aprendre de l'experiència dels altres. El meu objectiu és seguir desenvolupant-me en l'àmbit del software engineering i contribuïr a la creació de productes útils i de qualitat. \n \n",
+    about: "Sóc estudiant d'Enginyeria Informàtica a la Universitat Autònoma de Barcelona, especialitzat en Enginyeria del Software. Tinc un gran interès en el desenvolupament d'aplicacions i web ja sigui desde la concepció de la idea fins a la seva implementació i manteniment. \n \n Durant la carrera he treballat en projectes molt diversos, des de jocs i aplicacions acadèmiques fins a sistemes més complexos com punts de venda o eines de gestió de dades. Aquests projectes m'han ajudat a enfortir els coneixements en llenguatges com Java, C++ o Javascript, així com bones pràctiques de disseny de programari i ús de metodologies àgils. \n \n M'agrada aprendre noves tecnologies i afrontar reptes que em permetin créixer com a desenvolupador. Em motiva especialment treballar en equips col·laboratius, on puc aportar però sobretot aprendre de l'experiència dels altres. El meu objectiu és continuar desenvolupant-me en l'àmbit del software engineering i contribuïr a la creació de productes útils i de qualitat. \n \n",
     avatar: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=400&auto=format&fit=crop&sat=-20",
     cvLink: "#", // posa l'enllaç al teu CV
     linkedin: "#",
@@ -17,11 +17,11 @@ const PROFILE = {
             demo: "#"
         },
         {
-            title: "Tetris",
-            short: "Clàssic joc del tetris desenvolupat a classe",
-            desc: "Projecte acadèmic que tracta de dissenyar el clàssic joc del tetris tot desenvolupat amb llenguatge C++",
-            tech: ["C++"],
-            github: "https://github.com/asoucheiron/Tetris/tree/main",
+            title: "QuickPlan",
+            short: "Aplicació social desenvolupada a classe",
+            desc: "Projecte acadèmic, en que en un grup format per 8 persones, vam desenvolupar una app social d'esdeveniments i hàbits.",
+            tech: ["Kotlin, Java"],
+            github: "#",
             demo: "#"
         },
         {
@@ -29,6 +29,14 @@ const PROFILE = {
             short: "Implementació d'una classe 'Map' amb sobrecàrrega d'operador[].",
             desc: "Classe genèrica en C++ amb versions const i non-const per accés per clau i per posició; gestió de valors per defecte.",
             tech: ["C++", "Templates"],
+            github: "#",
+            demo: "#"
+        },
+        {
+            title: "Quiz Master",
+            short: "Creació personal d'un joc de cultura general.",
+            desc: "Aplicació per android sobre preguntes de cultura general amb diversos modes de Joc.",
+            tech: ["Kotlin", "Java"],
             github: "#",
             demo: "#"
         }

@@ -160,7 +160,7 @@ main {
 
 .sidebar .section+.section {
     margin-top: 18px;
-    text-align: left;
+    text-align: center;
 }
 
 .edu li {
@@ -196,11 +196,16 @@ footer {
 .links {
     display: flex;
     gap: 8px;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
 a.small-link {
+    text-decoration: none;
+    background-color: rgb(24, 23, 77);
+    border-radius: 30px;
     font-size: 0.9rem;
+    padding: 10px 20px;
     color: var(--accent);
 }
 
