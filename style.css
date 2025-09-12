@@ -72,7 +72,7 @@ nav.top-actions {
     color: inherit;
     font-weight: 600;
     text-align: center;
-    border: 1px solid rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.963);
 }
 
 main {
@@ -191,6 +191,11 @@ footer {
 
 .modal .card {
     padding: 20px;
+    background: rgba(9, 26, 65, 0.9);
+}
+
+.modal .card div {
+    margin-top: 30px;
 }
 
 .links {
@@ -200,9 +205,18 @@ footer {
     flex-wrap: wrap;
 }
 
-a.small-link {
+a.linkedin-link {
     text-decoration: none;
     background-color: rgb(24, 23, 77);
+    border-radius: 30px;
+    font-size: 0.9rem;
+    padding: 10px 20px;
+    color: var(--accent);
+}
+
+a.github-link {
+    text-decoration: none;
+    background-color: rgb(23, 77, 56);
     border-radius: 30px;
     font-size: 0.9rem;
     padding: 10px 20px;

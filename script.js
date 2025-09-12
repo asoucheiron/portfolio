@@ -4,8 +4,8 @@ const PROFILE = {
     about: "Sóc estudiant d'Enginyeria Informàtica a la Universitat Autònoma de Barcelona, especialitzat en Enginyeria del Software. Tinc un gran interès en el desenvolupament d'aplicacions i web ja sigui desde la concepció de la idea fins a la seva implementació i manteniment. \n \n Durant la carrera he treballat en projectes molt diversos, des de jocs i aplicacions acadèmiques fins a sistemes més complexos com punts de venda o eines de gestió de dades. Aquests projectes m'han ajudat a enfortir els coneixements en llenguatges com Java, C++ o Javascript, així com bones pràctiques de disseny de programari i ús de metodologies àgils. \n \n M'agrada aprendre noves tecnologies i afrontar reptes que em permetin créixer com a desenvolupador. Em motiva especialment treballar en equips col·laboratius, on puc aportar però sobretot aprendre de l'experiència dels altres. El meu objectiu és continuar desenvolupant-me en l'àmbit del software engineering i contribuïr a la creació de productes útils i de qualitat. \n \n",
     avatar: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=400&auto=format&fit=crop&sat=-20",
     cvLink: "#", // posa l'enllaç al teu CV
-    linkedin: "#",
-    github: "#",
+    linkedin: "https://www.linkedin.com/in/alex-soucheiron-garc%C3%ADa-91aa0b383?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BO5neAWfZSv2pCAWzzr927Q%3D%3D",
+    github: "https://github.com/asoucheiron?tab=repositories",
     skills: ["Java", "C++", "Git", "HTML/CSS", "JavaScript", "Linux"],
     projects: [
         {
@@ -25,10 +25,10 @@ const PROFILE = {
             demo: "#"
         },
         {
-            title: "Mapa C++ (Map class)",
-            short: "Implementació d'una classe 'Map' amb sobrecàrrega d'operador[].",
-            desc: "Classe genèrica en C++ amb versions const i non-const per accés per clau i per posició; gestió de valors per defecte.",
-            tech: ["C++", "Templates"],
+            title: "Botiga On-line",
+            short: "Implementació d'una botiga de compres online",
+            desc: "Creació d'una pàgina web per a la compra de samarretes esportives com futbol, basket, Formula 1...",
+            tech: ["HTML", "PHP", "CSS", "JavaScript", "SQL"],
             github: "#",
             demo: "#"
         },
@@ -37,7 +37,7 @@ const PROFILE = {
             short: "Creació personal d'un joc de cultura general.",
             desc: "Aplicació per android sobre preguntes de cultura general amb diversos modes de Joc.",
             tech: ["Kotlin", "Java"],
-            github: "#",
+            github: "https://github.com/asoucheiron/Quiz-Master",
             demo: "#"
         }
     ]
