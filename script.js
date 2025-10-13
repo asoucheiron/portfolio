@@ -3,8 +3,8 @@ const PROFILE = {
     role: "Estudiant d'Enginyeria Informàtica",
     about: "Sóc estudiant d'Enginyeria Informàtica a la Universitat Autònoma de Barcelona, especialitzat en Enginyeria del Software. Tinc un gran interès en el desenvolupament d'aplicacions i web ja sigui des de la concepció de la idea fins a la seva implementació i manteniment. \n \n Durant la carrera he treballat en projectes molt diversos, des de jocs i aplicacions acadèmiques fins a sistemes més complexos com punts de venda o eines de gestió de dades. Aquests projectes m'han ajudat a enfortir els coneixements en llenguatges com Java, C++ o Javascript, així com bones pràctiques de disseny de programari i ús de metodologies àgils. \n \n M'agrada aprendre noves tecnologies i afrontar reptes que em permetin créixer com a desenvolupador. Em motiva especialment treballar en equips col·laboratius, on puc aportar però sobretot aprendre de l'experiència dels altres. El meu objectiu és continuar desenvolupant-me en l'àmbit del software engineering i contribuïr a la creació de productes útils i de qualitat. \n \n",
     avatar: "Foto2.jpeg",
-    cvLink: "#", // posa l'enllaç al teu CV
-    linkedin: "https://www.linkedin.com/in/alex-soucheiron-garc%C3%ADa-91aa0b383?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BO5neAWfZSv2pCAWzzr927Q%3D%3D",
+    cvLink: "CV_AlexSoucheiron.pdf",
+    linkedin: "https://www.linkedin.com/in/alex-soucheiron-garc%C3%ADa-91aa0b383",
     github: "https://github.com/asoucheiron?tab=repositories",
     skills: ["Java", "C++", "Git", "HTML/CSS", "JavaScript", "Linux"],
     projects: [
@@ -20,7 +20,7 @@ const PROFILE = {
             title: "QuickPlan",
             short: "Aplicació social desenvolupada a classe",
             desc: "Projecte acadèmic, en que en un grup format per 8 persones, vam desenvolupar una app social d'esdeveniments i hàbits.",
-            tech: ["Kotlin, Java"],
+            tech: ["Kotlin", "Java"],
             github: "#",
             demo: "#"
         },
@@ -43,37 +43,52 @@ const PROFILE = {
     ]
 }
 
+// ------------------------------
+// Inserció i interacció
+// ------------------------------
 
-// ------------------------------
-// Lògica d'inserció i interacció
-// ------------------------------
+// Nom i rol
 document.getElementById('name').innerText = PROFILE.name + ' — ' + PROFILE.role;
-//document.getElementById('role').innerText = PROFILE.role;
-//document.getElementById('tagline').innerText = PROFILE.tagline;
+
+// Sobre mi
 document.getElementById('about-text').innerText = PROFILE.about;
-document.getElementById('avatar').src = PROFILE.avatar;
-document.getElementById('downloadCv').href = PROFILE.cvLink;
+
+// Avatar
+const avatarEl = document.getElementById('avatar');
+avatarEl.src = PROFILE.avatar;
+avatarEl.alt = PROFILE.name;
+
+// Descàrrega CV
+const downloadBtn = document.getElementById('downloadCv');
+downloadBtn.href = PROFILE.cvLink;
+downloadBtn.setAttribute('download', 'CV_AlexSoucheiron.pdf'); // Força la descàrrega
+downloadBtn.target = "_blank"; // Alternativa en navegadors que ignoren download (iOS)
+
+// Xarxes socials
 document.getElementById('linkedin').href = PROFILE.linkedin;
 document.getElementById('github').href = PROFILE.github;
-document.getElementById('year').innerText = new Date().getFullYear();
 
+// Any actual
+document.getElementById('year').innerText = new Date().getFullYear();
 
 // Skills
 const skillsList = document.getElementById('skills-list');
 PROFILE.skills.forEach(s => {
-    const el = document.createElement('div'); el.className = 'skill'; el.innerText = s; skillsList.appendChild(el);
+    const el = document.createElement('div');
+    el.className = 'skill';
+    el.innerText = s;
+    skillsList.appendChild(el);
 })
-
 
 // Projects
 const projectsGrid = document.getElementById('projects-grid');
-PROFILE.projects.forEach((p, idx) => {
-    const div = document.createElement('div'); div.className = 'project card';
+PROFILE.projects.forEach((p) => {
+    const div = document.createElement('div');
+    div.className = 'project card';
     div.innerHTML = `<h3>${p.title}</h3><p>${p.short}</p><div class="meta">${p.tech.join(' · ')}</div>`;
     div.addEventListener('click', () => openModal(p));
     projectsGrid.appendChild(div);
 })
-
 
 // Modal
 const modal = document.getElementById('modal');
