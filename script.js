@@ -35,7 +35,7 @@ const PROFILE = {
         {
             title: "Quiz Master",
             short: "Creació personal d'un joc de cultura general.",
-            desc: "Aplicació per android sobre preguntes de cultura general amb diversos modes de Joc.",
+            desc: "Aplicació per android sobre preguntes de cultura general amb diversos modes de Joc. APLICACIÓ EN DESENVOLUPAMENT",
             tech: ["Kotlin", "Java"],
             github: "https://github.com/asoucheiron/Quiz-Master",
             demo: "#"
