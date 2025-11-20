@@ -1,7 +1,7 @@
 const PROFILE = {
     name: "Alex Soucheiron García",
-    role: "Estudiant d'Enginyeria Informàtica",
-    about: "Sóc estudiant d'Enginyeria Informàtica a la Universitat Autònoma de Barcelona, especialitzat en Enginyeria del Software. Tinc un gran interès en el desenvolupament d'aplicacions i web ja sigui des de la concepció de la idea fins a la seva implementació i manteniment. \n \n Durant la carrera he treballat en projectes molt diversos, des de jocs i aplicacions acadèmiques fins a sistemes més complexos com punts de venda o eines de gestió de dades. Aquests projectes m'han ajudat a enfortir els coneixements en llenguatges com Java, C++ o Javascript, així com bones pràctiques de disseny de programari i ús de metodologies àgils. \n \n M'agrada aprendre noves tecnologies i afrontar reptes que em permetin créixer com a desenvolupador. Em motiva especialment treballar en equips col·laboratius, on puc aportar però sobretot aprendre de l'experiència dels altres. El meu objectiu és continuar desenvolupant-me en l'àmbit del Software engineering i contribuir a la creació de productes útils i de qualitat. \n \n",
+    role: "Estudiante de Ingeniería Informática",
+    about: "Soy estudiante de Ingeniería Informática en la Universidad Autónoma de Barcelona, especializado en ingeniería del Software. Tengo un gran interés en el desarrollo de aplicaciones y web ya sea desde la concepción de la idea hasta su implementación y mantenimiento. \n \n Durante la carrera he trabajado en proyectos muy diversos, des de juegos y aplicaciones académicas hasta sistemes más complejos como herramientas de gestión de datos. Estos proyectos me han ayudado a fortalecer los conocimientos en lenguajes como Java, C++ o Javascript, así como buenas prácticas de diseño de programario y uso de metodologías ágiles. \n \n Me gusta aprender nuevas tecnologías y afrontar retos que me permitan crecer como desarrollador. Me motiva especialmente trabajar en equipos colaborativos, donde puedo aportar pero sobre todo aprender de la experiencia de los demás. Mi objetivo es continuar desarrollandome en el ámbito del Software engineering y contribuir a la creación de productos útiles y de calidad. \n \n",
     avatar: "Foto2.jpeg",
     cvLink: "CV_AlexSoucheiron.pdf",
     linkedin: "https://www.linkedin.com/in/alex-soucheiron-garc%C3%ADa-91aa0b383",
@@ -9,36 +9,32 @@ const PROFILE = {
     skills: ["Java", "C++", "Git", "HTML/CSS", "JavaScript", "Linux"],
     projects: [
         {
-            title: "Doors (Projecte Java)",
-            short: "Implementació d'un projecte de control de bloqueig i desbloqueig remot de portes.",
-            desc: "Projecte implementat amb Java que ens permet obrir i tancar portes amb un botó, però ademés de poder gestionar portes individualment, també podem tancar plantes senceres i inclús l'edifici sencer.",
-            tech: ["Java"],
-            github: "#",
-            demo: "#"
+            title: "Rutas",
+            short: "Implementación de una web para conductores de Bus",
+            desc: "Implementado usando HTML, CSS, Javascript y una API de google, ha sido diseñada para ayudar a los transfers desde el aeropuerto que tienen diferentes paradas en su ruta para ver cuál es el recorrido más eficiente",
+            tech: ["HTML, CSS, JavaScript"],
+            github: "https://github.com/asoucheiron/Canva-web",
         },
         {
             title: "QuickPlan",
-            short: "Aplicació social desenvolupada a classe",
-            desc: "Projecte acadèmic, en que en un grup format per 8 persones, vam desenvolupar una app social d'esdeveniments i hàbits.",
+            short: "Aplicación social desarrollada en clase",
+            desc: "Proyecto académico, en que en un grupo formado por 8 personas, desarrollamos una app social de eventos y hábitos.",
             tech: ["Kotlin", "Java"],
-            github: "#",
-            demo: "#"
+            github: "https://github.com/asoucheiron?tab=repositories",
         },
         {
-            title: "Botiga On-line",
-            short: "Implementació d'una botiga de compres online",
-            desc: "Creació d'una pàgina web per a la compra de samarretes esportives com futbol, basket, Formula 1...",
+            title: "Tienda On-line",
+            short: "Implementación de una tienda de compras online",
+            desc: "Creación de una página web para la compra de camisetas deportivas como futbol, basket, Formula 1...",
             tech: ["HTML", "PHP", "CSS", "JavaScript", "SQL"],
             github: "https://github.com/asoucheiron/TodoCamisetas",
-            demo: "#"
         },
         {
             title: "Quiz Master",
-            short: "Creació personal d'un joc de cultura general.",
-            desc: "Aplicació per android sobre preguntes de cultura general amb diversos modes de Joc. APLICACIÓ EN DESENVOLUPAMENT",
+            short: "Creación personal de un juego de cultura general.",
+            desc: "Aplicación para android sobre preguntas de cultura general con diversos modos de Juego. APLICACIÓn EN DESARROLLO",
             tech: ["Kotlin", "Java"],
             github: "https://github.com/asoucheiron/Quiz-Master",
-            demo: "#"
         }
     ]
 }
@@ -95,9 +91,9 @@ const modal = document.getElementById('modal');
 function openModal(p) {
     document.getElementById('modal-title').innerText = p.title;
     document.getElementById('modal-desc').innerText = p.desc;
-    document.getElementById('modal-tech').innerText = 'Tecnologies: ' + (p.tech || []).join(', ');
+    document.getElementById('modal-tech').innerText = 'Tecnologías: ' + (p.tech || []).join(', ');
     document.getElementById('modal-github').href = p.github || '#';
-    document.getElementById('modal-demo').href = p.demo || '#';
+    //document.getElementById('modal-demo').href = p.demo || '#';
     modal.style.display = 'flex';
 }
 document.getElementById('closeModal').addEventListener('click', () => modal.style.display = 'none');
